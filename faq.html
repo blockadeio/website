@@ -43,6 +43,11 @@
             <a class="github-button" href="https://github.com/blockadeio/chrome_extension/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/9b/blockade/network" data-count-api="/repos/9b/blockade#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork 9b/blockade on GitHub">Fork</a>
             <p></p>
             <p class="view"><a href="https://github.com/blockadeio/chrome_extension">View the Project on GitHub <small></small></a></p>
+            <h2>Blockade Suite</h2>
+            <p><strong>Blockade Cloud Node</strong></p>
+            <p>The <a href="https://github.com/blockadeio/cloud_node">Blockade Cloud Node</a> lets you or anyone else host their own indicator source. Once stood up, administrators can invite others to collaborat through a micro-API. Users can add your cloud node as a channel inside of their instance through the options page.</p>
+            <p><strong>Blockade Analyst Toolbench</strong></p>
+            <p>The <a href="https://github.com/blockadeio/analyst_toolbench">Blockade Analyst Toolbench</a> is a simple kit to speed up indicator submissions to a cloud node of your choice. The kit comes with free whitelist checking and handles the entire submission process through a simple command-line tool.</p>
             <h2>Support</h2>
             <p>For bugs and other problems, please file a message in the repositories <a href="https://github.com/blockadeio/chrome_extension/issues">issues</a> area. For private questions or comments, contact Brandon at info@blockade.io or find us on social media.</p>
             <a href="https://blockade-io.slack.com" target="_blank"><img src="https://simpleicons.org/icons/slack.svg" width="25"></a>&nbsp;&nbsp;
@@ -59,6 +64,14 @@
             <p>If Blockade detects a malicious website, it will automatically redirect the request to a <a href="https://raw.githubusercontent.com/blockadeio/chrome_extension/master/screenshots/blockade-warning-page.png">local warning page</a> with additional context about the hack. This process happens before any web traffic leaves the browser, so you can be sure you never accidentally visit the malicious content.</p>
             <p><strong>What data does Blockade collect?</strong></p>
             <p>Blockade is built with privacy in mind and only collects data when an attack has been identified. Data about the web request and browser are sent to the cloud node for processing. This data is processed by an analyst in order to try and identify more attacks.</p>
+            <p><strong>Can I host my own cloud node?</strong></p>
+            <p>Yes! We have an opensource Python-based server you can use to host your own cloud node. Click <a href="https://github.com/blockadeio/cloud_node">here</a> access to the code and instructions.</p>
+            <p><strong>How does Blockade inspect my browser?</strong></p>
+            <p>Great question. Chrome provides developers with special access to certain parts of the browser through APIs. Blockade uses a web request API in order to inspect all requests the browser is making <i>before</i> any data is transmitted. You can read more about our architecture <a href="https://www.blockade.io/architecture.html">here</a>.</p>
+            <p><strong>How do I contribute to a cloud node?</strong></p>
+            <p>You can either set up your own cloud node, or link up with analysts who already have one. You will need to be approved by the administrators of the node to contribute. Once that's out of the way, you can use our <a href="https://github.com/blockadeio/analyst_toolbench">analyst toolbench</a> to send in indicators.</p>
+            <p><strong>Can I keep my indicators private?</strong></p>
+            <p>Yes and no. Any indicator sent to a Blockade cloud server must be hashed by the user (our toolbench handles all this). We do this in part to simplify the storage process, but also ensure that your indicators aren't known by others, even the browsers where they are deployed.</p>
             <p><strong>Can I help with the project?</strong></p>
             <p>Absolutely! If you have ideas, suggestions or want to work with the maintainers, just send us a message or file an issue!</p>
         </section>
