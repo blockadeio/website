@@ -62,7 +62,7 @@
             <p>
                 <a href="https://raw.githubusercontent.com/blockadeio/chrome_extension/master/screenshots/aws-architecture.png"><img src="https://raw.githubusercontent.com/blockadeio/chrome_extension/master/screenshots/aws-architecture.png" /></a>
             </p>
-            <p>Blockade makes use of a <a href="https://aws.amazon.com/lambda/serverless-architectures-learn-more/">“severless architecture”</a> provided by Amazone Web Services. In order to power the Chrome Extension, the cloud node exposes two endpoints, one for getting intelligence and the other for processing events generated from malicious content. Each of these APIs map to a stateless function that either reads or writes to a NoSQL database. For events in particular, a copy of the content is also sent to S3 for long-term storage.</p>
+            <p>Blockade makes use of a <a href="https://aws.amazon.com/lambda/serverless-architectures-learn-more/">“severless architecture”</a> provided by Amazon Web Services. In order to power the Chrome Extension, the cloud node exposes two endpoints, one for getting intelligence and the other for processing events generated from malicious content. Each of these APIs map to a stateless function that either reads or writes to a NoSQL database. For events in particular, a copy of the content is also sent to S3 for long-term storage.</p>
             <h2 id="indicator-formatindicator-format"><a href="#indicator-format"></a>Indicator Format</h2>
             <p>Data sent to each end-user browser is in a simple array format of hashed details and uses the following structure.</p>
 
