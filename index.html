@@ -38,7 +38,7 @@
             <a href="/"><img src="/assets/img/blockade.png" width="25%"></a>
             <p></p>
             <h1>Blockade</h1>
-            <p>Blockade brings antivirus-like capabilities to users who run the Chrome browser. Built as an extension, Blockade blocks malicious resources from being viewed or loaded inside of the browser.</p>
+            <p>Blockade brings antivirus-like capabilities to users who run <a href="https://github.com/blockadeio/chrome_extension">Chrome</a> and <a href="https://github.com/blockadeio/firefox_extension">Firefox</a> browsers. Built as an extension, Blockade blocks malicious resources from being viewed or loaded inside of the browser.</p>
             <a class="github-button" href="https://github.com/blockadeio/chrome_extension/archive/master.zip" data-icon="octicon-cloud-download" data-style="mega" aria-label="Download 9b/blockade on GitHub">Download</a>
             <a class="github-button" href="https://github.com/blockadeio/chrome_extension" data-icon="octicon-star" data-style="mega" data-count-href="/9b/blockade/stargazers" data-count-api="/repos/9b/blockade#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star 9b/blockade on GitHub">Star</a>
             <a class="github-button" href="https://github.com/blockadeio/chrome_extension/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/9b/blockade/network" data-count-api="/repos/9b/blockade#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork 9b/blockade on GitHub">Fork</a>
@@ -60,13 +60,14 @@
             <h1 id="usageusage"><a href="#usage"></a>Usage</h1>
             <p>Getting Blockade in your browser is just a click away</p>
             <p><img src="/assets/img/add-to-chrome.png" width="45%" onclick="chrome.webstore.install()" id="install-button" /></p>
+            <p><a href="https://addons.mozilla.org/en-US/firefox/addon/blockade-io/"><img src="/assets/img/add-to-firefox.png" width="30%"/></a></p>
             <p>Once installed, Blockade will automatically start running and begin searching for malicious websites. In the event a malicious site is detected, Blockade will redirect you to a warning page with more details about the content.</p>
             <h1 id="architecturearchitecture"><a href="#architecture"></a>Architecture</h1>
             <p>
                 <a href="https://raw.githubusercontent.com/blockadeio/chrome_extension/master/screenshots/blockade-architecture.png"><img src="https://raw.githubusercontent.com/blockadeio/chrome_extension/master/screenshots/blockade-architecture.png" width="40%" /></a>
                 <a href="https://raw.githubusercontent.com/blockadeio/chrome_extension/master/screenshots/aws-architecture.png"><img src="https://raw.githubusercontent.com/blockadeio/chrome_extension/master/screenshots/aws-architecture.png" width="40%" /></a>
             </p>
-            <p>Blockade is split into two pieces, cloud infrastructure and the local Chrome Extension. Intelligence is passed from the cloud infrastructure directly into the browser’s local storage. Using special APIs available to extensions, Blockade will look for any web request matching a known indicator and block it from being loaded. Malicious events from Blockade are passed to the cloud infrastructure where analysts can review the findings and surface more attacks.</p>
+            <p>Blockade is split into two pieces, cloud infrastructure and the local Extension. Intelligence is passed from the cloud infrastructure directly into the browser’s local storage. Using special APIs available to extensions, Blockade will look for any web request matching a known indicator and block it from being loaded. Malicious events from Blockade are passed to the cloud infrastructure where analysts can review the findings and surface more attacks.</p>
             <p>For more details, including an architecture diagram, <a href="architecture.html">click here</a>.</p>
             <h1 id="faqfaq"><a href="#faq"></a>F.A.Q.</h1>
             <p><strong>Why a browse extension?</strong></p>
